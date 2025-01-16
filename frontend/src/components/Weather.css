@@ -1,0 +1,39 @@
+/* Weather.css */
+.weather-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.temperature-container {
+    margin: 20px 0;
+}
+
+.temperature {
+    font-size: 34px;
+    font-weight: bold; /* Bold font weight */
+    color: #333; /* Darker color for better visibility */
+    background-color: #fff; /* Background color */
+    padding: 10px 20px; /* Padding around the temperature */
+    border-radius: 8px; /* Rounded corners */
+    display: inline-block; /* Inline block to center it */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.weather-info h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.weather-info i {
+    font-size: 2em;
+    margin: 10px 0;
+}
