@@ -21,7 +21,7 @@ const App = () => {
         setLoading(true);
         setError('');
         try {
-            const response = await axios.get(`http://localhost:5000/api/weather/${city}?units=${unit}`);
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/weather/${city}?units=${unit}`);
             setWeather(response.data);
             if (city && !history.includes(city)) {
                 const newHistory = [...history, city];
@@ -45,7 +45,7 @@ const App = () => {
                 const { latitude, longitude } = position.coords;
                 setLoading(true);
                 try {
-                    const response = await axios.get(`http://localhost:5000/api/weather?lat=${latitude}&lon=${longitude}&units=${unit}`);
+                    const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/weather?lat=${latitude}&lon=${longitude}&units=${unit}`);
                     setWeather(response.data);
                 } catch (error) {
                     setError('Error fetching weather data');
